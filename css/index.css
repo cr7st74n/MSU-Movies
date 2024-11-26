@@ -1,0 +1,32 @@
+html, body {
+  height: 100%; /* Ensure the body and html elements take up full height */
+  margin: 0; /* Remove default margin */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* This allows the main content to grow and take up available space */
+}
+.bg-footer-custom {
+  background-color: #024873; /* Green background */
+  color: #FFFFFF;           /* White text */
+}
+
+.navbar-custom {
+  background-color: #024873; /* Green background */
+  color: white; /* Text color */
+}
+
+.navbar-custom .nav-link {
+  color: white; /* Link color */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #FFD700; /* Gold on hover */
+}
+
+
