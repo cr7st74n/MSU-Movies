@@ -9,7 +9,7 @@
     <main class="container">
         <h1> Add new movies here:</h1>
 
-        <form method="post" action="insert.php">
+        <form method="post" action="addMovie.php">
             <label>Title:</label>
             <input type="text" name="title" required><br>
             <label>Release Date:</label>
@@ -20,7 +20,7 @@
         </form>
 
         <?php
-        include('database.php'); // Include database connection
+        include('./database.php'); // Include database connection
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Get form data
@@ -38,7 +38,7 @@
             $statement->closeCursor();
 
             // Redirect back to the index page
-            header('Location: index.php');
+            header('Location: ./index.php');
             exit();
         }
         ?>

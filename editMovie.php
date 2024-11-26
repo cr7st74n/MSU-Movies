@@ -24,7 +24,7 @@
 </html>
 
 <?php
-include('database.php');
+include('./database.php');
 
 // Fetch movie details
 if (isset($_GET['id'])) {
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $statement->closeCursor();
 
     // Redirect to index page
-    header('Location: index.php');
+    header('Location: ./index.php');
     exit();
 }
 ?>
