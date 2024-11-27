@@ -1,6 +1,6 @@
 <?php 
     $dsn = 'mysql:host=localhost;dbname=msu_movies'; 
-    $username = 'Admin'; 
+    $username = 'admin'; 
     $password = 'Cggradmin1'; 
 
     try { 
